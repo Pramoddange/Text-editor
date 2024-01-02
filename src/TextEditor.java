@@ -86,19 +86,26 @@ public class TextEditor implements ActionListener {
             System.exit(0);
         }
         if(actionEvent.getSource()==openFile){
+            //Open a file chooser
             JFileChooser fileChooser=new JFileChooser("C:");
             int chooseOption=fileChooser.showOpenDialog(null);
+            //if we have click on open button
             if(chooseOption==JFileChooser.APPROVE_OPTION){
+                //Get the path of selected file
                 File file=fileChooser.getSelectedFile();
                 String filePath=file.getPath();
                 try{
+                    //Initialize file reader
                     FileReader fileReader=new FileReader(filePath);
-                    BufferedReader bufferedReader=new BufferedReader(fileReader);
-                    String intermediate ="",output ="";
-                    while((intermediate=bufferedReader.readLine())!=null){
-                        output+=intermediate+"\n";
-                    }
-                    textArea.setText(output);
+                    //Initialize Buffered reader
+                     BufferedReader bufferedReader = new BufferedReader(fileReader);
+                    StringBuilder output = new StringBuilder();
+                    String intermediate;
+                        while (null != (intermediate = bufferedReader.readLine())) {
+                            output.append(intermediate).append("\n");
+
+                        }
+                    textArea.setText(output.toString());
                 }catch (IOException fileNotFoundException){
                     fileNotFoundException.printStackTrace();
                 }
@@ -120,11 +127,12 @@ public class TextEditor implements ActionListener {
             }
         }
         if(actionEvent.getSource()==newFile){
-            TextEditor newTextEditor=new TextEditor();
+            new TextEditor();
         }
     }
     public static void main(String[] args) {
-       TextEditor textEditor=new TextEditor();
+
+        new TextEditor();
 
     }
 }
