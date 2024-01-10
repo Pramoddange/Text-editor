@@ -1,0 +1,5 @@
+![Screenshot (42)](https://github.com/Pramoddange/Text-editor/assets/123957464/7069ed15-a4af-4dd1-a871-2c3267995e5d)
+![Screenshot (43)](https://github.com/Pramoddange/Text-editor/assets/123957464/5e8c4b9d-5e96-44f9-b92c-0d789e08a2f0)
+![Screenshot (44)](https://github.com/Pramoddange/Text-editor/assets/123957464/6dc30352-870c-44ee-8e1d-2cf213770aa6)
+![Screenshot (45)](https://github.com/Pramoddange/Text-editor/assets/123957464/28ca84ab-b9da-45d2-8fe9-054221b27fa1)
+![Screenshot (46)](https://github.com/Pramoddange/Text-editor/assets/123957464/a21d8f2f-b700-4c6f-9b44-bb8fcb5cb21f)
